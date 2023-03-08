@@ -8,12 +8,14 @@ export const REACT_APP_REDIRECT_URL = 'http://localhost:5173'
 /**
  * github oauth client id
  */
-export const REACT_APP_GITHUB_CLIENT_ID = '693217078fda07dc20cc'
+// export const REACT_APP_GITHUB_CLIENT_ID = '693217078fda07dc20cc' // localhost:5137 use
+export const REACT_APP_GITHUB_CLIENT_ID = '983a25ae4aded4c93d38' // https://github.com/33YANG/taichi-cop-testing use
 
 /**
  * github oauth client secret. should be kept secret in production!
  */
-export const REACT_APP_GITHUB_CLIENT_SECRET = 'f3bf22ff016a5e04e0b7e51674b2723c20c05eab'
+// export const REACT_APP_GITHUB_CLIENT_SECRET = 'f3bf22ff016a5e04e0b7e51674b2723c20c05eab' // localhost:5137 use
+export const REACT_APP_GITHUB_CLIENT_SECRET = '8e6c91a1eeb00bf55c5faba1dfd1bbdb68822188' // https://github.com/33YANG/taichi-cop-testing use
 
 /**
  * github oauth url
