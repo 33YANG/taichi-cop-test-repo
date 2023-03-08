@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+}
+
+header {
+  color: #fff;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 8px 24px -2px #2a2c38;
+  height: 3.6rem;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1001;
+  padding: 0 2rem;
+  .title {
+    span {
+      font-size: 1.1rem;
+      font-weight: 400;
+      margin: 0 5px;
+    }
+  }
+  .right-info {
+    padding: 0 2rem;
+    margin: 0 2rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .user-docs {
+    margin: 0 2rem 0 1rem;
+  }
+  .user-info {
+    .name {
+      padding: 0 10px;
+      font-size: 14px;
+    }
+  }
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  background-color: #535353;
+  color: #fff;
+  height: 100vh;
+  padding: 3.6rem 2rem;
+  box-sizing: border-box;
+
+  .control-panel {
+    position: absolute;
+    top: 5rem;
+    right: 2rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #353535;
+    color: #ccc;
+    h3 {
+      text-align: center;
+      margin: 12px 0 8px 0;
+    }
+    .control-item {
+      margin: 8px 0;
+      padding: 0 10px;
+      cursor: pointer;
+    }
+    input {
+      background-color: #535353;
+      border: 1px solid #535353;
+      color: #ccc;
+      padding: 5px;
+      border-radius: 5px;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
