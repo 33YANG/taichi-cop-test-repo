@@ -26,7 +26,7 @@ export const REACT_APP_GITHUB_AUTH_URL = `https://github.com/login/oauth/authori
 /**
  * github oauth access token api, should run in server side
  */
-export const REACT_APP_GITHUB_AUTH_ACCESS_TOKEN_API = `/api/login/oauth/access_token?client_id=${REACT_APP_GITHUB_CLIENT_ID}&client_secret=${REACT_APP_GITHUB_CLIENT_SECRET}`
+export const REACT_APP_GITHUB_AUTH_ACCESS_TOKEN_API = `https://github.com/login/oauth/access_token?client_id=${REACT_APP_GITHUB_CLIENT_ID}&client_secret=${REACT_APP_GITHUB_CLIENT_SECRET}`
 
 /**
  * github oauth user api
