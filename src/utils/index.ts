@@ -3,7 +3,7 @@ import axios from 'axios'
 /**
  * redirect url for github oauth
  */
-export const REACT_APP_REDIRECT_URL = 'http://localhost:5173'
+export const REACT_APP_REDIRECT_URL = 'https://github.com/33YANG/taichi-cop-testing'
 
 /**
  * github oauth client id
