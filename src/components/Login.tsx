@@ -8,14 +8,20 @@ export function LoginWithGithub(props: { setUserInfo: (userInfo: any) => void; s
     setLoading(true)
     // get access_token, cors issue here!!!
     // FIXME: CORS ISSUE
-    const access_token = await getGithubAccessToken(code)
+    const access_token = (await getGithubAccessToken(code)) || ''
     // set access_token to localStorage
     localStorage.setItem('access_token', access_token || null)
     // get user_info
-    const user_info = await getGithubUserInfo(access_token)
+    const user_info = (await getGithubUserInfo(access_token)) || {}
     setUserInfo(user_info)
     // set user_info to localStorage
-    localStorage.setItem('user_info', JSON.stringify(user_info))
+    if (user_info?.id) {
+      localStorage.setItem('user_info', JSON.stringify(user_info))
+    } else {
+      localStorage.removeItem('access_token')
+      localStorage.removeItem('user_info')
+      window.location.href = REACT_APP_REDIRECT_URL
+    }
     console.log('user_info', user_info)
     setLoading(false)
   }
