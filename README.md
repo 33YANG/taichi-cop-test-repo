@@ -1,15 +1,15 @@
-# taichi company frontend testing
+# TaiChi company frontend testing
 
 Use react + react-three-fiber complete a simple 3d editor
 
-## how to start
+## How to start
 
 ```bash
 yarn install
 yarn dev
 ```
 
-## how to build
+## How to build
 
 ```bash
 yarn build
